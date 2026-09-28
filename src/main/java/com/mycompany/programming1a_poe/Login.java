@@ -16,7 +16,7 @@ public class Login {
     private String loginPassword;
     private String cellPhoneNumber;
 
-    // Constructor
+    // Constructor to initialize user detail
     public Login(String firstName, String lastName, String username,
             String password, String cellPhoneNumber) {
 
