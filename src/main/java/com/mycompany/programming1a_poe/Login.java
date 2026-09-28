@@ -52,6 +52,7 @@ public class Login {
     }
 
     // Checks whether the cellphone number has the correct international format
+    // Regex for SA cellphone validation - adapted from GeeksforGeeks (2024)
     public Boolean checkCellPhoneNumber() {
 
         String cellPhoneRegex = "^\\+27[0-9]{9}$";
@@ -118,4 +119,6 @@ public class Login {
             return "Username or password incorrect, please try again.";
         }
     }
-}
+    // References:
+    // GeeksforGeeks. 2024. Regular Expressions in Java. Available at: https://www.geeksforgeeks.org/regular-expressions-in-java/ [Accessed 28 September 2026]
+}  
