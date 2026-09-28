@@ -37,7 +37,7 @@ public class Login {
         }
     }
 
-    // Checks whether the password meets the complexity requirements
+    // Checks whether the password meets the complexity requirements - 8 chars, capital, number and special
     public Boolean checkPasswordComplexity() {
 
         if (password.length() >= 8
