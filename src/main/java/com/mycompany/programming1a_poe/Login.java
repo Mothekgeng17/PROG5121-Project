@@ -27,7 +27,7 @@ public class Login {
         this.cellPhoneNumber = cellPhoneNumber;
     }
 
-    // Checks whether the username is correctly formatted
+    // Checks whether the username is correctly formatted -contains underscore and <=5 chars
     public Boolean checkUserName() {
 
         if (username.contains("_") && username.length() <= 5) {
