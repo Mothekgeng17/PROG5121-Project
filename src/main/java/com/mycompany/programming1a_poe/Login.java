@@ -7,7 +7,7 @@ package com.mycompany.programming1a_poe;
  */
 public class Login {
 
-    // Variables used to store the user's details
+    // Variables used to store the user's details Kyle, kyl_1,etc
     private String firstName;
     private String lastName;
     private String username;
