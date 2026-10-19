@@ -1,6 +1,6 @@
 # PROG5121 - Programming 1A POE Project
 
-![Build](https://github.com/Mothekeng17/PROG5121-Project/actions/workflows/maven.yml/badge.svg)
+![Build](https://github.com/Mothekgeng17/PROG5121-Project/actions/workflows/maven.yml/badge.svg)
 ![Java](https://img.shields.io/badge/Java-21-orange)
 ![Maven](https://img.shields.io/badge/Maven-3.9-blue)
 
