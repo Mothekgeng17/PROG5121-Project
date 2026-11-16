@@ -3,6 +3,7 @@ package com.mycompany.programming1a_poe;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Random;
+import java.util.ArrayList;
 
 public class Message {
     private String messageID;
@@ -84,6 +85,57 @@ public class Message {
     public static int returnTotalMessages() {
         return totalMessages;
     }
+
+    // ===== PART 3 METHODS =====
+    public static String findLongestMessage(ArrayList<Message> storedList) {
+        if (storedList.isEmpty()) return "No stored messages.";
+        Message longest = storedList.get(0);
+        for (Message m : storedList) {
+            if (m.getMessage().length() > longest.getMessage().length()) {
+                longest = m;
+            }
+        }
+        return longest.getMessage();
+    }
+
+    public static String searchByMessageID(ArrayList<Message> list, String id) {
+        for (Message m : list) {
+            if (m.getMessageID().equals(id)) {
+                return "Recipient: " + m.getRecipient() + "\nMessage: " + m.getMessage();
+            }
+        }
+        return "Message ID not found.";
+    }
+
+    public static String searchByRecipient(ArrayList<Message> list, String recipient) {
+        String result = "";
+        for (Message m : list) {
+            if (m.getRecipient().equals(recipient)) {
+                result += m.getMessage() + "\n";
+            }
+        }
+        return result.isEmpty() ? "No messages for recipient." : result;
+    }
+
+    public static String deleteByHash(ArrayList<Message> list, String hash) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getMessageHash().equals(hash)) {
+                String deleted = list.get(i).getMessage();
+                list.remove(i);
+                return "Message: " + deleted + " successfully deleted.";
+            }
+        }
+        return "Hash not found.";
+    }
+
+    public static String displayReport(ArrayList<Message> list) {
+        String report = "=== MESSAGE REPORT ===\n";
+        for (Message m : list) {
+            report += "Hash: " + m.getMessageHash() + "\nRecipient: " + m.getRecipient() + "\nMessage: " + m.getMessage() + "\n---\n";
+        }
+        return report;
+    }
+    // ===== END PART 3 =====
 
     // your getters/setters
     public String getMessageID() { return messageID; }
