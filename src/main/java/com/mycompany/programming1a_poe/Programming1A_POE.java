@@ -1,3 +1,8 @@
+// PROG5121 - Programming 1A POE Part 3
+// Student: Mothekgeng Masemola
+// Project: QuickChat Messaging App
+// Description: This program allows users to register, login, send, store and search messages
+// Part 3 Added: ArrayLists for sent/stored messages, JSON file saving, search and report menu
 package com.mycompany.programming1a_poe;
 
 import java.util.Scanner;
