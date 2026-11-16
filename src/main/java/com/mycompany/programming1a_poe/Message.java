@@ -137,6 +137,7 @@ public class Message {
     }
     // ===== END PART 3 =====
 
+    // your getters/setters
     public String getMessageID() { return messageID; }
     public int getMessageNumber() { return messageNumber; }
     public String getRecipient() { return recipient; }
